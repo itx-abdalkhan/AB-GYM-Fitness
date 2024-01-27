@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title AB GYM FITNESS
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    block scripts
+    block style 
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+  body
+    nav#navbar
+      div#logo
+        img(src="../static/img/logo.png")
+        | AB GYM
+      #menu-icon(onclick="toggleMenu()")
+        .bar
+        .bar
+        .bar  
+      ul#nav-links
+        li #[a(href="/") Home]
+        li
+          a(href="/#ourmission,javascript:void(0)") Our Mission
+          i.fa.fa-caret-down(style='color: white;')
+          ul
+            li #[a(href="/health") Health metrics dashboard]
+        li #[a(href="/#services") Services]
+        //- li #[a(href="/humber") humber]
+        li #[a(href="/#classinfo") Class Info]
+        li #[a(href="/#contact") Contact Us]
+        li #[a(href="/signup") Register Now]
+    block content
+    block foot
+        section#footer 
+            dev.footer 
+                dev.footer-content 
+                    | Copyright &copy; www.ABgymfitness.com. All rights reserved!

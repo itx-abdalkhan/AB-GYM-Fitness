@@ -1,0 +1,306 @@
+extends base.pug
+
+block scripts
+  script
+      include ../static/script.js
+block style
+  style
+      include ../static/style.css
+block content
+
+    section#home        
+      h1 It'S ALL ABOUT WHAT YOU CAN ACHEIVE
+      p#typed-text.typing Empower youself to make the change you need to make
+      button#btn #[a(href="#letgetstarted") Let's get started]
+    
+    section#ourmission
+        h2 Our Mission
+        div.container
+            div.card
+                h3 Fitness Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/img.png")
+                    div.card-content
+                        p Gym fitness is an essential part of a healthy lifestyle,we are offering a structured environment for physical training. It provides access to a wide range of equipment and expertise, enabling individuals to work towards their fitness goals effectively.
+
+            div.card
+                h3 Expert Trainers
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/img1.png")
+                    div.card-content
+                        p The expert gym trainers at my gym are a true fitness blessing. Their exceptional skills, dedication, and one-on-one attention have transformed your workouts, ensuring you stay motivated and reach your fitness milestones
+
+            div.card
+                h3 Gym the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/img2.png")
+
+                    div.card-content
+                        p In the gym, you have the freedom to tailor your workouts to suit your preferences and goals. Whether it's lifting weights, hitting the treadmill, or trying out different classes, you can shape your fitness journey according to what you enjoy most.
+
+    section#letgetstarted 
+        h2 Let's get started
+        dev.containers                     
+            dev.box#box1 
+                h3 Progression
+                dev.box-card 
+                    dev.box-img 
+                        img(src="/static/img/pro.png", alt="Progression img")
+                    dev.box-content 
+                        p Progression in the gym is the key to achieving fitness goals. Gradually increasing weights, reps, or intensity levels challenges your body, leading to muscle growth and improved performance. Tracking and celebrating these advancements keeps you motivated on your fitness journey.
+            dev.box#box2
+                h3 Workout
+                dev.box-card 
+                    dev.box-img 
+                        img(src="/static/img/hand.png", alt="Workout img")
+                    dev.box-content 
+                        p A gym workout is a dedicated time to focus on improving physical health and strength. It provides access to a variety of equipment and exercises, offering a comprehensive approach to fitness. Consistent gym workouts, combined with a balanced diet, can lead to better overall well-being and a more active lifestyle.
+            dev.box#box3
+                h3 Nutrition
+                dev.box-card 
+                    dev.box-img 
+                        img(src="/static/img/nutrition.png", alt="nutrition img")
+                    dev.box-content 
+                        p Nutrition plays a pivotal role in maximizing the benefits of your gym workouts. Fueling your body with the right balance of macronutrients - protein, carbohydrates, and healthy fats - supports muscle recovery and energy levels. A well-rounded diet tailored to your fitness goals ensures you get the most out of your time in the gym.
+
+    section#services 
+            h2 Our Services
+            dev.services-container 
+                dev.grid 
+                    h3 Vedio Instructor
+                    dev.grid-box
+                        dev.grid-img 
+                            img(src="/static/img/1.png", alt="Vedio instructor")
+                        dev.girdc-content
+                            p Our gym's video instructor service features a team of certified fitness professionals who are dedicated to helping you reach your fitness goals. They bring their passion and knowledge to each virtual class, ensuring that you get the most out of your workouts.
+                dev.grid 
+                    h3 Training Calender
+                    dev.grid-box
+                        dev.grid-img 
+                            img(src="/static/img/pro.png", alt="Training calender")
+                        dev.girdc-content
+                            p Our training calendar is your roadmap to success, offering a structured and dynamic fitness plan. It provides a clear path to achieving your goals with expertly designed workouts, ensuring you stay motivated and on track throughout your fitness journey.
+                dev.grid 
+                    h3 Free App &#38; Wifi 
+                    dev.grid-box
+                        dev.grid-img 
+                            img(src="/static/img/2.png", alt="Free App and Wifi")
+                        dev.girdc-content
+                            p Enjoy the convenience of free Wi-Fi during your workouts at our gym. Plus, enhance your fitness journey with our dedicated gym app, providing easy access to schedules, workout plans, and exclusive offers to make every visit more rewarding. 
+                dev.grid 
+                    h3 Community Support
+                    dev.grid-box
+                        dev.grid-img 
+                            img(src="/static/img/3.png", alt="Community Support")
+                        dev.girdc-content
+                            p At our gym, we believe in the power of community support. Join our fitness family and discover a welcoming environment where members uplift and inspire each other on their fitness journeys. Together, we achieve our goals and celebrate our successes.
+
+    section#classinfo 
+        dev.class 
+            h2 Our Classes info
+            h3 Working Hours and Classes Time table
+            dev.head 
+                table 
+                    thead 
+                        th  
+                            h4 Time                    
+                        th  
+                            h4 Monday                     
+                        th  
+                            h4 Thusday                 
+                        th  
+                            h4 Wednesday                    
+                        th  
+                            h4 Thrusday                    
+                        th  
+                            h4 Friday                    
+                        th  
+                            h4 Saturday                    
+                        th  
+                            h4 Sunday                    
+
+                    tbody 
+                     
+                        td 
+                            h4 6:00am - 8:00am
+                        td 
+                            h5 Cardio
+                            | John Deo                          
+                        td 
+                            h5
+                            |                           
+                        td 
+                            h5 Crossfit
+                            |  Adam Phillips  
+                        td 
+                            h5 
+                            |                             
+                        td 
+                            h5 Power Lifting
+                            |  James Alien                        
+                        td 
+                            h5 
+                            |                    
+                        td 
+                            h5 Cardio
+                            |  John Deo                        
+                    tbody 
+                     
+                        td 
+                            h4 10:00am- 12:00am
+                        td 
+                            h5 
+                            |                         
+                        td 
+                            h5 Powelifing
+                            |  James Alien                    
+                        td 
+                            h5 
+                            |    
+                        td 
+                            h5 Cardio 
+                            |  John Deo                           
+                        td 
+                            h5 
+                            |                         
+                        td 
+                            h5 Crossfiting
+                            |   Adam Phillips                        
+                        td 
+                            h5 
+                            |  
+
+                    tbody 
+                     
+                        td 
+                            h4 5.00pm - 7.00pm
+                        td 
+                            h5 Crossfit
+                            |  Adam Phillips                          
+                        td 
+                            h5
+                            |                           
+                        td 
+                            h5 Power Lifting
+                            |  James Alien  
+                        td 
+                            h5 
+                            |                             
+                        td 
+                            h5 Cardio
+                            |  John Deo                        
+                        td 
+                            h5 
+                            |                    
+                        td 
+                            h5 Crossfiting
+                            |   Adam Phillips       
+
+                    tbody 
+                     
+                        td 
+                            h4 7.00pm - 9.00pm
+                        td 
+                            h5 
+                            |                         
+                        td 
+                            h5 Cardio 
+                            |  John Deo                    
+                        td 
+                            h5 
+                            |    
+                        td 
+                            h5 Crossfiting
+                            |   Adam Phillips                           
+                        td 
+                            h5 
+                            |                         
+                        td 
+                            h5 Power Lifting
+                            |  James Alien                        
+                        td 
+                            h5 
+                            |   
+
+    section#location 
+        h2 Our Gym Location
+        iframe.dark-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849575.4929943393!2d72.48413093902194!3d33.71789397368153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df97a0a8f0e9bb%3A0x7eec0db9043067c4!2sAB%20Gym%20%26%20Fitness%20Club!5e0!3m2!1sen!2s!4v1698959112215!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+
+
+    section#contact 
+
+        dev.contact 
+            h2 Contact US   
+            dev.contact-box
+                form(action="/" method="post")
+                    dev.contatc-items 
+                        label(for="name") Name : 
+                        input(type="text" name="name" id="name" placeholder="Enter Your Name")    
+
+                    dev.contatc-items
+                        label(for="email") Email :  
+                        input(type="email" name="email" id="email" placeholder="Enter Your Email") 
+
+                    dev.contatc-items 
+                        label(for="phone") Phone :  
+                        input(type="text" name="phone" id="phone" placeholder="Enter Your Phone NO")    
+                    dev.contatc-items 
+                        label(for="address") Address :  
+                        input(type="text" name="address" id="address" placeholder="Enter Your Address")    
+                    dev.contatc-items 
+                        label(for="message") Message  
+                        textarea(name="message", type="text", cols="30", rows="10", id="message", placeholder="Enter your message")        
+                    dev.contatc-items 
+                        button#button Submit Now  
+
+    section#footermenu 
+        dev.footer 
+            dev.footer-box 
+                h2 Get in touch
+                p Get in touch with us thorugh Phone,Email or visit our Gym 
+                dev.footer-content
+                    dev.footer-img 
+                        img(src="/static/img/location.png", alt="location png")
+                    h4 Address
+                    |: Dhoke Gujran, Rawalpindi
+                dev.footer-content
+                    dev.footer-img 
+                        img(src="/static/img/tele.png", alt="Telephone png")
+                    h4 Phone
+                    |: +92310-1468681
+                dev.footer-content
+                    dev.footer-img 
+                        img(src="/static/img/email.png", alt="Home png")
+                    h4 Email 
+                    |: abdalk465@gmail.com
+
+            dev.footer-box 
+                h2 Latest News
+                dev.footer-contents 
+                    img(src="/static/img/bg7.jpg", alt="")
+                    h3 Our gym won one positon in the Annual Gymer competition that held in punjab
+                dev.footer-contents 
+                    img(src="/static/img/bg6.jpg", alt="")
+                    h3  Discover how our members achieved their fitness goals and transformed their lives.
+
+            dev.footer-box#footer-box3
+                h2 Follow Us on
+                dev.follow
+                  a(href="https://www.instagram.com/itx_abdalkhan/" target="_blank")
+                    img(src="/static/img/insta.png", alt="Instagram")
+                dev.follow
+                  a(href="https://web.facebook.com/profile.php?id=100078376819531" target="_blank")
+                    img(src="/static/img/fb.png", alt="facebook")
+                dev.follow
+                  a(href="https://www.linkedin.com/in/theabdalahmad/" target="_blank") 
+                    img(src="/static/img/linkden.png", alt="Linkden")
+                dev.follow
+                  a(href="https://wa.me/923101468681" target="_blank")
+                    img(src="/static/img/whatsapp.png", alt="Linkden")
+                 
+   
+                
+    

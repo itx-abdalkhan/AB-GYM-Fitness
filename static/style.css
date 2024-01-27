@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+* {
+    margin: 0%;
+    /* color: white; */
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    background-color: #40404047;
+    padding: 10px 9px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    padding: 5px 9px;
+    margin: 4px 8px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: emoji;
+    font-style: italic;
+}
+
+#navbar ul li a:hover {
+    color: #d43b3b;
+    ;
+    text-decoration-line: underline;
+    text-underline-position: below;
+    text-underline-offset: 1px;
+
+}
+
+#navbar ul ul {
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    padding: 5px 1px;
+    margin: 5px 1px;
+}
+
+#navbar ul li:hover>ul {
+    visibility: visible;
+    flex-direction: column;
+    position: absolute;
+
+}
+
+#navbar ul li:active>ul {
+    visibility: visible;
+}
+
+
+#navbar ul li:nth-child(6) a {
+    color: black;
+    font-family: sans-serif;
+    border: 2px solid #5d5d5d;
+    margin-left: 34px;
+    padding: 6px 17px;
+    border-radius: 20px;
+    background-color: #fcf8f8;
+    font-weight: bolder;
+}
+
+#navbar ul li:nth-child(6) a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Navigation bar img  */
+#navbar #logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 11px;
+    font-family: cursive;
+    font-weight: bolder;
+    filter: invert(1);
+}
+
+#navbar div img {
+    height: 25px;
+    width: 37px;
+    ;
+    margin: 1px 1px;
+}
+
+/* Hamburger Icon for Mobile */
+#menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Body section  */
+body::before {
+    content: " ";
+    position: absolute;
+    background: url('/static/img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 85vh;
+    z-index: -1;
+}
+
+/* Home section  */
+#home {
+    width: 100vw;
+    height: 65vh;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3.1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 4px 3px #5c5a5a;
+    color: white;
+}
+
+#home p {
+    color: white;
+    margin: 15px 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+    border-right: 2px solid white; /* Cursor effect */
+    animation: typing 4s steps(1, end) backwards ;
+    animation-timing-function:ease-in;
+    animation-delay: .5s;
+    
+}
+/* .typing {
+    animation: typing 2s steps(40, end) forwards; /* Adjust the duration as needed */
+/* } */ 
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 45%;
+    }
+}
+
+#home #btn {
+    color: white;
+    background-color: #d43b3b;
+    padding: 6px 3px;
+    font-weight: bolder;
+    margin: 7px 53px;
+    width: 10rem;
+    font-size: 1.2rem;
+
+    font-family: sans-serif;
+    align-self: baseline;
+    font-style: oblique;
+    height: 4rem;
+    cursor: pointer;
+}
+
+#home #btn:hover {
+    background-color: black;
+
+}
+
+#home #btn a {
+    color: white;
+}
+
+/* Our Mission section */
+#ourmission {
+    /* height: 326px; */
+    width: 100%;
+
+}
+
+#ourmission .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem 0.7rem;
+}
+
+#ourmission .card {
+    border: 2px solid black;
+    width: 30%;
+    margin: 14px 29px;
+    background-color: #e3e3e3a6;
+    border-radius: 40px;
+}
+
+
+#ourmission h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#ourmission .card h3 {
+    text-align: center;
+    margin: 0 12px;
+    font-weight: bolder;
+    margin-top: 24px;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+#ourmission .card p {
+    text-align: center;
+}
+
+#ourmission .card-img img {
+    height: 108px;
+    width: 112px;
+    display: block;
+    margin: 7px auto;
+}
+
+
+/* Let's get started section  */
+#letgetstarted h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding-top: 4.2rem;
+    margin-top: 1.6rem;
+    font-family: 'Playpen Sans', cursive;
+}
+
+#letgetstarted .containers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#letgetstarted .box {
+    width: 33%;
+    height: 270px;
+    margin: 2rem 0rem;
+}
+
+#letgetstarted .box-card {
+    display: flex;
+    flex-direction: row;
+}
+
+#letgetstarted .box img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1.8rem;
+}
+
+#letgetstarted .box-content {
+    margin-top: 1.4rem;
+    margin-right: 0.9rem;
+}
+
+#letgetstarted .box h3 {
+    text-align: center;
+    margin: 0 12px;
+    font-weight: bolder;
+    margin-top: 15px;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+#letgetstarted #box1 {
+    background-color: black;
+    color: white;
+
+}
+
+#letgetstarted #box1 img {
+    filter: invert(1);
+}
+
+#letgetstarted #box3 {
+    background-color: black;
+    color: white;
+
+}
+
+#letgetstarted #box2 {
+    background-color: #e31c25;
+    color: white;
+
+}
+
+/* Services Section  */
+.services-container {
+    display: grid;
+    grid-column-gap: 1fr;
+    grid-gap: 3rem;
+    grid-template-columns: 2fr 2fr;
+    width: 80vw;
+    margin: 2px auto;
+}
+
+#services h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 1.4rem;
+    margin-top: 1.6rem;
+    font-family: 'Playpen Sans', cursive;
+    ;
+}
+
+#services h3 {
+    text-align: center;
+    margin: 0 12px;
+    font-weight: bolder;
+    margin-top: 15px;
+    font-size: 1.7rem;
+    font-family: fantasy;
+    font-style: oblique;
+}
+
+#services .grid img {
+    height: 102px;
+    width: 105px;
+    margin: 16px 14px;
+    padding: 10px 6px;
+    background-color: #e31c25;
+}
+
+#services .girdc-content {
+    margin: 18px 7px
+}
+
+#services .grid-box {
+    display: flex;
+}
+
+/* Section Classes info */
+
+#classinfo h2 {
+    font-size: 2.7rem;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 1.6rem;
+    font-family: 'Playpen Sans', cursive;
+    color: #d43b3b;
+
+}
+
+#classinfo h3 {
+    text-align: center;
+    margin: 15px 2px;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    text-shadow: 1px 1px #d43b3b;
+    font-family: system-ui;
+}
+
+#classinfo .head {
+    width: 100vw;
+    display: flex;
+    height: 74%;
+    margin: 8px auto;
+    justify-content: center;
+}
+
+#classinfo table h4 {
+    padding: 15px 13px;
+    color: white;
+    border: 1px solid #888888;
+    background-color: black;
+    font-size: 1.3rem;
+}
+
+#classinfo table h5 {
+    font-size: 1.1rem;
+    margin: 7px 2px;
+}
+
+#classinfo table tbody td {
+    padding: 7px 5px;
+    border: 1px solid grey;
+    ;
+    text-align: center;
+}
+
+/* Section Our Location  */
+#location {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 2.2rem;
+    padding-bottom: 1.4rem;
+    margin-bottom: .8rem; 
+    margin-top: 1.6rem;
+    font-family: 'Playpen Sans', cursive;
+
+}
+
+.dark-map {
+    filter: grayscale(1%) invert(100%) brightness(110%);
+}
+
+/* Section Contact Us  */
+#contact h2 {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    font-family: 'Playpen Sans', cursive;
+}
+/* #contact .contact-box::before {
+    content: "";
+    background: url("/static/img/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+} */
+#contact .contact-box {
+    display: block;
+    background: url("/static/img/bg2.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height: 100%;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact form input {
+    font-family: sans-serif;
+    width: 50vw;
+    display: block;
+    border: 2px solid black;
+    font-weight: bolder;
+    padding: 6px 10px;
+    border-radius: 10px;
+    margin: 7px 2px;
+}
+
+#contact form label {
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+#contact form textarea {
+    font-family: sans-serif;
+    display: block;
+    border: 2px solid black;
+    font-weight: bolder;
+    width: 50vw;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+#contact form button {
+    font-family: cursive;
+    display: block;
+    border: 2px solid black;
+    font-weight: bolder;
+    width: 50vw;
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    margin: 17px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contact form #button:hover {
+    color: #d43b3b;
+    background-color: black;
+}
+
+/* Footer Menu Section  */
+#footermenu {
+    height: 100%;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+
+#footermenu .footer {
+    justify-content: center;
+    display: flex;
+    /* align-items: center; */
+}
+
+#footermenu h2 {
+    font-size: 2rem;
+    font-family: system-ui;
+    margin-bottom: 2rem;
+}
+
+#footermenu p {
+    padding: 9px 9px;
+}
+
+#footermenu .footer-box {
+    margin: 5rem 3rem;
+    width: 33%;
+}
+
+#footermenu .footer-content {
+    display: block;
+}
+
+#footermenu .footer-img {
+    padding: 7px 11px;
+    background-color: #262626;
+    display: inline-block;
+    height: 38px;
+    margin: 11px 8px;
+    width: 40px;
+}
+
+#footermenu .footer-content img {
+    width: 13px;
+    height: 23px;
+}
+
+#footermenu h4 {
+    display: inline;
+}
+
+#footermenu .footer-contents {
+    display: flex;
+    /* justify-content:  center; */
+    align-items: center;
+}
+
+#footermenu .footer-contents img {
+    margin: 10px 7px;
+    width: 105px;
+    height: 95px;
+}
+
+#footermenu #footer-box3 {
+    height: 280px;
+}
+
+#footermenu .follow img {
+    width: 36px;
+    cursor: pointer;
+    height: 40px;
+    margin: 2px 9px;
+    display: inline-block;
+}
+
+#footermenu .follow a img {
+    width: 36px;
+    cursor: pointer;
+    height: 40px;
+    margin: 2px 9px;
+    display: inline-block;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+#footermenu .follow a img:hover{
+    filter: hue-rotate(180deg)
+}
+
+
+/* Footer Section  */
+#footer {
+    width: 100vw;
+}
+
+#footer .footer-content {
+    width: 100vw;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 2px;
+    font-size: 1.1rem;
+}
+
+/* Adjust styles for screens between 768px and 1023px wide (tablets) */
+@media (max-width: 850px){
+    body::before {
+        height: 80vh;
+        /* Adjust background image size */
+    }
+
+    #home {
+        height: 60vh;
+        /* Adjust the height of the home section */
+    }
+    #home h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    #home p {
+        white-space:unset;
+    }
+
+    #footer .footer-content {
+        font-size: 1rem;
+    }
+
+    /* For Navigation Bar  */
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul.active {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+
+    #navbar ul ul {
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        padding: 5px 1px;
+        margin: 5px 1px;
+    }
+
+    #navbar ul li:hover>ul {
+        visibility: visible;
+        flex-direction: column;
+        position: absolute;
+        margin: 15px 1px;
+
+    }
+
+    #navbar ul li:active>ul {
+        visibility: visible;
+    }
+
+    /* For Our mission section  */
+    #ourmission .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #ourmission {
+        /* height: 326px; */
+        width: 100%;
+    }
+
+    #ourmission .card {
+        margin: 8px 5px;
+        width: 70%;
+    }
+
+    #ourmission .card h3 {
+        font-size: 1.7rem;
+    }
+
+    #ourmission .card p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* For Let Get Started Section  */
+    #letgetstarted .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #letgetstarted .box {
+        width: 100%;
+        height: 500px;
+        margin: 0rem 0rem;
+    }
+
+    #letgetstarted #box1 {
+        margin-top: 3rem;
+    }
+    #letgetstarted .box-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #letgetstarted .box h3 {
+        font-size: 2.5rem;
+    }
+
+    #letgetstarted .box-content {
+        margin-top: 1.4rem;
+        margin-right: 0.9rem;
+        font-size: 1.4rem;
+    }
+
+    #letgetstarted .box img {
+        width: 140px;
+        height: 140px;
+        margin-right: 1.8rem;
+    }
+
+    /* Services Container  */
+    #services .girdc-content {
+        margin: 18px 7px;
+        font-size: 1.6rem;
+    }
+    .services-container{
+        display:grid;
+        grid-template-columns:none;
+    }
+
+    /* For Contact Section      */
+
+    #contact form {
+        height: 100%;
+    }
+    /* For classes info  */
+    #classinfo{
+        display: none;
+    }
+
+    /* For map  */
+    .dark-map{
+        width: 100%;
+    }
+
+    /* For footer menu  */
+    #footermenu .footer-box {
+        margin: 1.2rem 3rem;
+        width: 33%;
+    }
+
+    #footermenu .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 650px){
+    #home h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #home p{
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    #home #btn {
+        color: white;
+        background-color: #d43b3b;
+        padding: 4px 3px;
+        font-weight: bolder;
+        margin: 7px 53px;
+        width: 7rem;
+        font-size: 0.8rem;
+        font-family: sans-serif;
+        align-self: baseline;
+        font-style: oblique;
+        height: 1.3rem;
+        cursor: pointer;
+}
+}

@@ -1,0 +1,268 @@
+* {
+    margin: 0%;
+    /* color: white; */
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    background-color: #40404047;
+    padding: 10px 9px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    padding: 5px 9px;
+    margin: 4px 8px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: emoji;
+    font-style: italic;
+}
+
+#navbar ul li a:hover {
+    color: #d43b3b;
+    ;
+    text-decoration-line: underline;
+    text-underline-position: below;
+    text-underline-offset: 1px;
+
+}
+#navbar ul ul{
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    padding: 5px 1px;
+    margin: 5px 1px;
+    ;
+}
+#navbar ul li:hover>ul{
+    visibility: visible;
+    flex-direction: column;
+    position: absolute;
+   
+}
+#navbar ul li:active>ul{
+    visibility: visible;
+    position: absolute;
+}
+
+#navbar ul li:nth-child(6) a {
+    color: black;
+    font-family: sans-serif;
+    border: 2px solid #5d5d5d;
+    margin-left: 34px;
+    padding: 6px 17px;
+    border-radius: 20px;
+    background-color: #fcf8f8;
+    font-weight: bolder;
+}
+
+#navbar ul li:nth-child(6) a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Navigation bar img  */
+#navbar #logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 11px;
+    font-family: cursive;
+    font-weight: bolder;
+    filter: invert(1);
+}
+
+#navbar div img {
+    height: 25px;
+    width: 37px;
+    ;
+    margin: 1px 1px;
+}
+/* Hamburger Icon for Mobile */
+#menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+/* #Footer section  */
+#footer{
+    width: 100vw;
+}
+#footer .footer-content{
+    width: 100vw;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 2px;
+}
+
+/* Home Section  */
+
+#daseboard{
+    justify-content: center; 
+     height: 100%; 
+    color: white;
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+} 
+
+body{
+    height: 100%;
+    width: 100vw;
+    background: url('/static/img/daseboard.jpg') no-repeat  center/cover;
+}
+h1 {
+    font-size: 3rem;
+    color: #f9f9f9;
+    /* padding: 3rem 3rem; */
+    padding-top: 5.4rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-style: unset;
+    font-weight: bolder;
+    font-family: monospace;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: cursive;
+    text-align: center;
+    padding: 0rem 3rem;
+}
+.box{
+    display: flex;
+    padding-top: 1.8rem;
+    flex-direction: row;
+}
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 10px;
+    width: 70%;
+    border-radius: 4rem;
+    /* float: left; */
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.weak {
+    background-color: #9d9d9d;
+}
+
+.average {
+    background-color: white;
+}
+.heading{
+    color: black;
+}
+
+.fully-fit {
+    background-color: #9d9d9d;
+    color: black;
+
+}
+@media  screen and (max-width: 510px){
+    .box{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+    
+
+/* Adjust styles for screens between 768px and 1023px wide (tablets) */
+@media (max-width: 850px){
+    /* For Navigation Bar  */
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul.active {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+    #navbar ul ul{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        padding: 5px 1px;
+        margin: 5px 1px;
+    }
+    #navbar ul li:hover>ul{
+        visibility: visible;
+        flex-direction: column;
+        position: absolute;
+        margin: 15px 1px;
+       
+    }
+    #navbar ul li:active>ul{
+        visibility: visible;
+    }
+    .box{
+        justify-content: center;
+        align-items: center;
+    }
+}

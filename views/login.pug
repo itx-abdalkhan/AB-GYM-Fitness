@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script
+      include ../static/script.js
+block style
+  style
+      include ../static/signup.css
+block content
+    
+    section#home 
+      dev#login 
+        h2 Register Now
+        dev#login-box 
+          form(action="/register" method="post")
+            dev.login-info   
+              label(for="name") Name:
+              input(type="text", name="name" id="name" placeholder="Type your name")
+
+            dev.login-info 
+              label(for="weight") Weight (Ibs):
+              input(type="text", name="weight" id="weight" placeholder="Your current weight")
+
+            //- dev.login-info 
+            //-   label(for="desireweight") Desired Weight(Ibs):
+            //-   input(type="text", name="desireweight" id="desireweight" placeholder="Your desired weight")
+            
+            dev.login-info 
+              label(for="height") Height:
+              input(type="text", name="height" id="height" placeholder="Enter your height")
+            
+            dev.login-info 
+              label(for="address") Address: 
+              input(type="text", name="address" id="address" placeholder="Enter your Address")
+            
+            dev.login-info 
+              label(for="email") Email:
+              input(type="email", name="email" id="email" placeholder="Enter your email")
+            
+            dev.login-info
+              label(for="phone") Phone No: 
+              input(type="text", name="phone" id="phone" placeholder="Enter your phone No")
+            
+            dev.login-info 
+            input(type="submit", value="Apply Now")
+
+            //- dev.sing 
+            //-   h4 or login with 
+            //-   dev.img 
+            //-     img(src="/static/img/fb.png", alt="facebook")
+            //-   dev.img 
+            //-     img(src="/static/img/google.png", alt="facebook")
+            //-   dev.img 
+            //-     img(src="/static/img/insta.png", alt="facebook")

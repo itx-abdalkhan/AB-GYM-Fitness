@@ -1,0 +1,270 @@
+* {
+    margin: 0%;
+    /* color: white; */
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    background-color: #40404047;
+    padding: 10px 9px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 2px 2px;
+    margin: 2px 2px;
+    padding: 5px 9px;
+    margin: 4px 8px;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: emoji;
+    font-style: italic;
+}
+
+#navbar ul li a:hover {
+    color: #d43b3b;
+    text-decoration-line: underline;
+    text-underline-position: below;
+    text-underline-offset: 1px;
+
+}
+#navbar ul ul{
+    visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    padding: 5px 1px;
+    margin: 5px 1px;
+}
+#navbar ul li:hover>ul{
+    visibility: visible;
+    flex-direction: column;
+    position: absolute;
+   
+}
+#navbar ul li:active>ul{
+    visibility: visible;
+}
+
+#navbar ul li:nth-child(6) a {
+    color: black;
+    font-family: sans-serif;
+    border: 2px solid #5d5d5d;
+    margin-left: 34px;
+    padding: 6px 17px;
+    border-radius: 20px;
+    background-color: #fcf8f8;
+    font-weight: bolder;
+}
+
+#navbar ul li:nth-child(6) a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Navigation bar img  */
+#navbar #logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 11px;
+    font-family: cursive;
+    font-weight: bolder;
+    filter: invert(1);
+}
+
+#navbar div img {
+    height: 25px;
+    width: 37px;
+    ;
+    margin: 1px 1px;
+}
+/* Hamburger Icon for Mobile */
+#menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+/* #Footer section  */
+#footer{
+    width: 100vw;
+}
+#footer .footer-content{
+    width: 100vw;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 2px;
+}
+
+/* #Home section  */
+
+/* body::before{
+    content: "";
+    position: absolute;
+    background: url("/static/img/photo-1534438327276-14e5300c3a48.jpeg") no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1
+    
+} */
+body{
+    background: url('/static/img/photo-1534438327276-14e5300c3a48.jpeg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100%;
+}
+
+#home{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+#login{
+    display: block;
+    width: 60%;
+    margin: 2rem auto;
+    /* border: 2px solid white; */
+    /* height: 60vh; */
+}
+#home form{
+    display: flex;
+    flex-direction: column;
+
+}
+#home form input{
+    padding: 6px 5px;
+    margin: 5px 22px;
+    border-radius: 8px;
+    font-family: cursive;
+    border: 2px solid black;
+}
+#home form input[type="submit"]{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: cursive;
+}
+#home form input[type="submit"]:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+#home form label{
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;;
+}
+#home  .login-info {
+    display: flex;
+    flex-direction: column;
+}
+#home form h5{
+    align-self: end;
+    color: white;
+    font-weight: bolder;
+    margin: 0px 22px;
+    cursor: pointer;
+}
+
+#home h2{
+    text-align: center;
+    color: white;
+    font-size: 2.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+#home .sing h4{
+    margin:3px 2px;
+    font-size: 1.4rem;
+}
+#home .sing{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+#home .sing img{
+    height: 50px;
+    width: 50px;
+    margin:5px 5px;
+    cursor: pointer;
+}
+
+/* Adjust styles for screens between 768px and 1023px wide (tablets) */
+@media (max-width: 850px){
+    /* For Navigation Bar  */
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul.active {
+        display: flex;
+    }
+
+    #navbar ul li {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+    #navbar ul ul{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        padding: 5px 1px;
+        margin: 5px 1px;
+    }
+    #navbar ul li:hover>ul{
+        visibility: visible;
+        flex-direction: column;
+        position: absolute;
+        margin: 15px 1px;
+       
+    }
+    #navbar ul li:active>ul{
+        visibility: visible;
+    }
+}
